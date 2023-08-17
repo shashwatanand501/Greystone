@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lato&family=Montserrat&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+
+.header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 100%;
+}
+
+.pages_link {
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.pages_link li {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.pages_link ul {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0px;
+}
+
+.pages_link ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.Logo h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.Logo h1 {
+    margin: 0px;
+}
+
+/* side Nav */
+.side-nav {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    background-color: white;
+    overflow-x: hidden;
+    transition: right 0.5s;
+    display: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.side-nav ul a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+@media (max-width: 700px) {
+    .Logo {
+        margin-left: 10px;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .side-nav {
+        display: block;
+    }
+
+    .header {
+
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .pages_link {
+        display: none;
+
+    }
+
+    .pages_link ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 99;
+    }
+}

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lato&family=Montserrat&family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+
+.footer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.logo {
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.logo p {
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.links p{
+    margin: 0px;
+}
+.links {
+    justify-content: space-evenly;
+    align-items: flex-start;
+    display: flex;
+    width: 90%;
+    gap: 18px;
+    padding: 10px;
+
+}
+.links ul{
+    margin: 0px;
+    padding: 0px;
+}
+.links ul li a{
+    text-decoration: none;
+    color: black;
+}
+.links ul li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.under_line{
+    margin: 0px;
+    margin-bottom: 10px;
+    width: 50px;
+}
+.social_media{
+    text-align: center;
+}
+@media (max-width: 700px) {
+    .footer{
+        flex-direction: column;
+        
+    align-items: center;
+
+    }
+    .logo{
+        align-items: center;
+    }
+    .logo p{
+        text-align: center;
+    }
+    .social_media img{
+        width: 40px;
+    }
+}
